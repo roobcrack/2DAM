@@ -1,0 +1,15 @@
+C:\Users\Roob\Desktop\Complejos\Complejos\bin\Debug\net8.0\Complejos.exe
+C:\Users\Roob\Desktop\Complejos\Complejos\bin\Debug\net8.0\Complejos.deps.json
+C:\Users\Roob\Desktop\Complejos\Complejos\bin\Debug\net8.0\Complejos.runtimeconfig.json
+C:\Users\Roob\Desktop\Complejos\Complejos\bin\Debug\net8.0\Complejos.dll
+C:\Users\Roob\Desktop\Complejos\Complejos\bin\Debug\net8.0\Complejos.pdb
+C:\Users\Roob\Desktop\Complejos\Complejos\obj\Debug\net8.0\Complejos.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Roob\Desktop\Complejos\Complejos\obj\Debug\net8.0\Complejos.AssemblyInfoInputs.cache
+C:\Users\Roob\Desktop\Complejos\Complejos\obj\Debug\net8.0\Complejos.AssemblyInfo.cs
+C:\Users\Roob\Desktop\Complejos\Complejos\obj\Debug\net8.0\Complejos.csproj.CoreCompileInputs.cache
+C:\Users\Roob\Desktop\Complejos\Complejos\obj\Debug\net8.0\Complejos.sourcelink.json
+C:\Users\Roob\Desktop\Complejos\Complejos\obj\Debug\net8.0\Complejos.dll
+C:\Users\Roob\Desktop\Complejos\Complejos\obj\Debug\net8.0\refint\Complejos.dll
+C:\Users\Roob\Desktop\Complejos\Complejos\obj\Debug\net8.0\Complejos.pdb
+C:\Users\Roob\Desktop\Complejos\Complejos\obj\Debug\net8.0\Complejos.genruntimeconfig.cache
+C:\Users\Roob\Desktop\Complejos\Complejos\obj\Debug\net8.0\ref\Complejos.dll
