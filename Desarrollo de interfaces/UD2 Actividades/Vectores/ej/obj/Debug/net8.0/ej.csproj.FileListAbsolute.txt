@@ -1,0 +1,15 @@
+C:\Users\Roob\Desktop\ej\ej\obj\Debug\net8.0\ej.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Roob\Desktop\ej\ej\obj\Debug\net8.0\ej.AssemblyInfoInputs.cache
+C:\Users\Roob\Desktop\ej\ej\obj\Debug\net8.0\ej.AssemblyInfo.cs
+C:\Users\Roob\Desktop\ej\ej\obj\Debug\net8.0\ej.csproj.CoreCompileInputs.cache
+C:\Users\Roob\Desktop\ej\ej\obj\Debug\net8.0\ej.sourcelink.json
+C:\Users\Roob\Desktop\ej\ej\bin\Debug\net8.0\ej.exe
+C:\Users\Roob\Desktop\ej\ej\bin\Debug\net8.0\ej.deps.json
+C:\Users\Roob\Desktop\ej\ej\bin\Debug\net8.0\ej.runtimeconfig.json
+C:\Users\Roob\Desktop\ej\ej\bin\Debug\net8.0\ej.dll
+C:\Users\Roob\Desktop\ej\ej\bin\Debug\net8.0\ej.pdb
+C:\Users\Roob\Desktop\ej\ej\obj\Debug\net8.0\ej.dll
+C:\Users\Roob\Desktop\ej\ej\obj\Debug\net8.0\refint\ej.dll
+C:\Users\Roob\Desktop\ej\ej\obj\Debug\net8.0\ej.pdb
+C:\Users\Roob\Desktop\ej\ej\obj\Debug\net8.0\ej.genruntimeconfig.cache
+C:\Users\Roob\Desktop\ej\ej\obj\Debug\net8.0\ref\ej.dll

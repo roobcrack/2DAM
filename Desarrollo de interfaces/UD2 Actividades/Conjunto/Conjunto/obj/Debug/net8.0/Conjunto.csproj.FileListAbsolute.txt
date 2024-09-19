@@ -1,0 +1,15 @@
+C:\Users\Roob\Desktop\Conjunto\Conjunto\bin\Debug\net8.0\Conjunto.exe
+C:\Users\Roob\Desktop\Conjunto\Conjunto\bin\Debug\net8.0\Conjunto.deps.json
+C:\Users\Roob\Desktop\Conjunto\Conjunto\bin\Debug\net8.0\Conjunto.runtimeconfig.json
+C:\Users\Roob\Desktop\Conjunto\Conjunto\bin\Debug\net8.0\Conjunto.dll
+C:\Users\Roob\Desktop\Conjunto\Conjunto\bin\Debug\net8.0\Conjunto.pdb
+C:\Users\Roob\Desktop\Conjunto\Conjunto\obj\Debug\net8.0\Conjunto.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Roob\Desktop\Conjunto\Conjunto\obj\Debug\net8.0\Conjunto.AssemblyInfoInputs.cache
+C:\Users\Roob\Desktop\Conjunto\Conjunto\obj\Debug\net8.0\Conjunto.AssemblyInfo.cs
+C:\Users\Roob\Desktop\Conjunto\Conjunto\obj\Debug\net8.0\Conjunto.csproj.CoreCompileInputs.cache
+C:\Users\Roob\Desktop\Conjunto\Conjunto\obj\Debug\net8.0\Conjunto.sourcelink.json
+C:\Users\Roob\Desktop\Conjunto\Conjunto\obj\Debug\net8.0\Conjunto.dll
+C:\Users\Roob\Desktop\Conjunto\Conjunto\obj\Debug\net8.0\refint\Conjunto.dll
+C:\Users\Roob\Desktop\Conjunto\Conjunto\obj\Debug\net8.0\Conjunto.pdb
+C:\Users\Roob\Desktop\Conjunto\Conjunto\obj\Debug\net8.0\Conjunto.genruntimeconfig.cache
+C:\Users\Roob\Desktop\Conjunto\Conjunto\obj\Debug\net8.0\ref\Conjunto.dll
