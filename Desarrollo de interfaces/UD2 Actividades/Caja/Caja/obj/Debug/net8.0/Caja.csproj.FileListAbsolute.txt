@@ -1,0 +1,5 @@
+C:\Users\Roob\Desktop\2DAM\Desarrollo de interfaces\UD2 Actividades\Caja\Caja\obj\Debug\net8.0\Caja.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Roob\Desktop\2DAM\Desarrollo de interfaces\UD2 Actividades\Caja\Caja\obj\Debug\net8.0\Caja.AssemblyInfoInputs.cache
+C:\Users\Roob\Desktop\2DAM\Desarrollo de interfaces\UD2 Actividades\Caja\Caja\obj\Debug\net8.0\Caja.AssemblyInfo.cs
+C:\Users\Roob\Desktop\2DAM\Desarrollo de interfaces\UD2 Actividades\Caja\Caja\obj\Debug\net8.0\Caja.csproj.CoreCompileInputs.cache
+C:\Users\Roob\Desktop\2DAM\Desarrollo de interfaces\UD2 Actividades\Caja\Caja\obj\Debug\net8.0\Caja.sourcelink.json

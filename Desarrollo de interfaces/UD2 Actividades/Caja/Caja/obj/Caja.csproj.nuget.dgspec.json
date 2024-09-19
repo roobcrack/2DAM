@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Roob\\Desktop\\Caja\\Caja\\Caja.csproj": {}
+    "C:\\Users\\Roob\\Desktop\\2DAM\\Desarrollo de interfaces\\UD2 Actividades\\Caja\\Caja\\Caja.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Roob\\Desktop\\Caja\\Caja\\Caja.csproj": {
+    "C:\\Users\\Roob\\Desktop\\2DAM\\Desarrollo de interfaces\\UD2 Actividades\\Caja\\Caja\\Caja.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Roob\\Desktop\\Caja\\Caja\\Caja.csproj",
+        "projectUniqueName": "C:\\Users\\Roob\\Desktop\\2DAM\\Desarrollo de interfaces\\UD2 Actividades\\Caja\\Caja\\Caja.csproj",
         "projectName": "Caja",
-        "projectPath": "C:\\Users\\Roob\\Desktop\\Caja\\Caja\\Caja.csproj",
+        "projectPath": "C:\\Users\\Roob\\Desktop\\2DAM\\Desarrollo de interfaces\\UD2 Actividades\\Caja\\Caja\\Caja.csproj",
         "packagesPath": "C:\\Users\\Roob\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Roob\\Desktop\\Caja\\Caja\\obj\\",
+        "outputPath": "C:\\Users\\Roob\\Desktop\\2DAM\\Desarrollo de interfaces\\UD2 Actividades\\Caja\\Caja\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Roob\\AppData\\Roaming\\NuGet\\NuGet.Config",
