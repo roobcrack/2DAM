@@ -26,7 +26,6 @@ class MainActivity : AppCompatActivity() {
         super.onStart()
 
         binding.button.setOnClickListener{
-            // Set result to null
             binding.tvResult.text = null
 
             val tName = binding.tietName.text.toString()
@@ -41,7 +40,6 @@ class MainActivity : AppCompatActivity() {
                 }
 
                 if (moduleCheck) {
-                    // Prepare result text for the name, surname, and birthdate
                     binding.tvResult.text = getString(
                         R.string.txt_result1,
                         tName,
@@ -49,16 +47,13 @@ class MainActivity : AppCompatActivity() {
                         binding.tietBirthDate.text.toString()
                     )
 
-                    // License and turn validation
                     val license = if (binding.rbNo.isChecked) getString(R.string.no) else getString(R.string.yes)
                     val turn = if (binding.swTurn.isChecked) getString(R.string.afternoon_shift) else getString(R.string.txt_morning)
 
-                    // Append the license and turn result
                     binding.tvResult.append(
                         getString(R.string.txt_result2, license, turn)
                     )
 
-                    // Add selected modules to a list and display them
                     val modules = mutableListOf<String>()
                     if (binding.cbADA.isChecked) modules.add(getString(R.string.ada))
                     if (binding.cbDI.isChecked) modules.add(getString(R.string.di))
@@ -66,13 +61,11 @@ class MainActivity : AppCompatActivity() {
                     if (binding.cbPSP.isChecked) modules.add(getString(R.string.psp))
                     if (binding.cbSGE.isChecked) modules.add(getString(R.string.sge))
 
-                    // Append the selected modules to the result
                     binding.tvResult.append(
                         getString(R.string.txt_result3, modules.joinToString("\n"))
                     )
 
                 } else {
-                    // Show a warning if no module is selected
                     Toast.makeText(
                         this,
                         getString(R.string.txt_warning_modules),
