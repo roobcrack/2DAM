@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">Demo01</string>
+    <string name="basic_form">Basic Form</string>
+    <string name="name">Name</string>
+    <string name="surname">Surname</string>
+    <string name="birthdate">BirthDate</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="afternoon_shift">Afternoon shift</string>
+    <string name="do_you_have_driving_license">Do you have driving license?</string>
+    <string name="pmdm">PMDM</string>
+    <string name="di">DI</string>
+    <string name="psp">PSP</string>
+    <string name="sge">SGE</string>
+    <string name="validate">Validate</string>
+    <string name="modules_to_choose">Modules to choose</string>
+    <string name="ada">ADA</string>
+    <string name="txt_warning">This field can not be empty</string>
+    <string name="txt_warning_modules">You have to select at least one module</string>
+    <string name="txt_morning">Morning shift</string>
+    <string name="txt_result1">Name: %1$s \nSurname: %2$s \nBirthday:%3$s \n\n</string>
+    <string name="txt_result2">Driving license: %1$s \nShift type: %2$s\n\n</string>
+    <string name="txt_result3">Selected modules:\n%1$s</string>
+</resources>
