@@ -2,8 +2,8 @@ import java.util.Random;
 import java.util.concurrent.Semaphore;
 
 public class Main extends Thread {
-
     private static final Semaphore gasolinaSurtidores = new Semaphore(2);
+
     private static final Semaphore dieselSurtidores = new Semaphore(1);
     private final int tipo;
     private static final Random random = new Random();

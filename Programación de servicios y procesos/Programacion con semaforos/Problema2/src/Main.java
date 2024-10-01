@@ -8,4 +8,5 @@ public class Main extends Thread {
     private static final Semaphore secado = new Semaphore(2);
     private static final Random random = new Random();
 
+
 }
