@@ -1,0 +1,15 @@
+C:\Users\Roob\Desktop\CapaDatosBasico\CapaDatosBasico\bin\Debug\net8.0\CapaDatosBasico.deps.json
+C:\Users\Roob\Desktop\CapaDatosBasico\CapaDatosBasico\bin\Debug\net8.0\CapaDatosBasico.runtimeconfig.json
+C:\Users\Roob\Desktop\CapaDatosBasico\CapaDatosBasico\bin\Debug\net8.0\CapaDatosBasico.dll
+C:\Users\Roob\Desktop\CapaDatosBasico\CapaDatosBasico\bin\Debug\net8.0\CapaDatosBasico.pdb
+C:\Users\Roob\Desktop\CapaDatosBasico\CapaDatosBasico\obj\Debug\net8.0\CapaDatosBasico.csproj.AssemblyReference.cache
+C:\Users\Roob\Desktop\CapaDatosBasico\CapaDatosBasico\obj\Debug\net8.0\CapaDatosBasico.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Roob\Desktop\CapaDatosBasico\CapaDatosBasico\obj\Debug\net8.0\CapaDatosBasico.AssemblyInfoInputs.cache
+C:\Users\Roob\Desktop\CapaDatosBasico\CapaDatosBasico\obj\Debug\net8.0\CapaDatosBasico.AssemblyInfo.cs
+C:\Users\Roob\Desktop\CapaDatosBasico\CapaDatosBasico\obj\Debug\net8.0\CapaDatosBasico.csproj.CoreCompileInputs.cache
+C:\Users\Roob\Desktop\CapaDatosBasico\CapaDatosBasico\obj\Debug\net8.0\CapaDatosBasico.sourcelink.json
+C:\Users\Roob\Desktop\CapaDatosBasico\CapaDatosBasico\obj\Debug\net8.0\CapaDatosBasico.dll
+C:\Users\Roob\Desktop\CapaDatosBasico\CapaDatosBasico\obj\Debug\net8.0\refint\CapaDatosBasico.dll
+C:\Users\Roob\Desktop\CapaDatosBasico\CapaDatosBasico\obj\Debug\net8.0\CapaDatosBasico.pdb
+C:\Users\Roob\Desktop\CapaDatosBasico\CapaDatosBasico\obj\Debug\net8.0\CapaDatosBasico.genruntimeconfig.cache
+C:\Users\Roob\Desktop\CapaDatosBasico\CapaDatosBasico\obj\Debug\net8.0\ref\CapaDatosBasico.dll
