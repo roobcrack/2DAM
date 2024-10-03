@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Roob\\Desktop\\Conjunto\\Conjunto\\Conjunto.csproj",
+      "projectUniqueName": "C:\\Users\\Roob\\Desktop\\2DAM\\Desarrollo de interfaces\\UD2 Actividades\\Conjunto\\Conjunto\\Conjunto.csproj",
       "projectName": "Conjunto",
-      "projectPath": "C:\\Users\\Roob\\Desktop\\Conjunto\\Conjunto\\Conjunto.csproj",
+      "projectPath": "C:\\Users\\Roob\\Desktop\\2DAM\\Desarrollo de interfaces\\UD2 Actividades\\Conjunto\\Conjunto\\Conjunto.csproj",
       "packagesPath": "C:\\Users\\Roob\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Roob\\Desktop\\Conjunto\\Conjunto\\obj\\",
+      "outputPath": "C:\\Users\\Roob\\Desktop\\2DAM\\Desarrollo de interfaces\\UD2 Actividades\\Conjunto\\Conjunto\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Roob\\AppData\\Roaming\\NuGet\\NuGet.Config",

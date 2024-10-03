@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Conjunto")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a121cfe58ea7bdb15bf45ec4c0684483202d2322")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
 [assembly: System.Reflection.AssemblyProductAttribute("Conjunto")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Conjunto")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
