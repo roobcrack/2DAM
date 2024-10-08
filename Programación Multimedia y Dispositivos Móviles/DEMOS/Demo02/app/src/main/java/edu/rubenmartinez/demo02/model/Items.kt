@@ -7,7 +7,7 @@ data class Items(
         val items: MutableList<Items> = mutableListOf()
 
         init {
-            for (i in 1..200000
+            for (i in 900..2000
             ) {
                 items.add(
                     Items(

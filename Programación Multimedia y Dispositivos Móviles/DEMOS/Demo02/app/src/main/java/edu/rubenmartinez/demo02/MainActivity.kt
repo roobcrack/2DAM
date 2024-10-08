@@ -1,15 +1,17 @@
 package edu.rubenmartinez.demo02
 
+import android.content.Intent
 import android.os.Bundle
+import android.view.Gravity
 import android.widget.Toast
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
+import androidx.coordinatorlayout.widget.CoordinatorLayout
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import com.google.android.material.snackbar.Snackbar
 import edu.rubenmartinez.demo02.databinding.ActivityMainBinding
 import edu.rubenmartinez.demo02.model.Items
-import edu.rubenmartinez.demo02.model.ItemsAdapter
 
 class MainActivity : AppCompatActivity() {
     private lateinit var binding: ActivityMainBinding
@@ -28,17 +30,18 @@ class MainActivity : AppCompatActivity() {
         itemsAdapter = ItemsAdapter(
             Items.items,
             itemClick = { item ->
-                Toast.makeText(
-                    this,
-                    "Item clicked: ${item.title}",
-                    Toast.LENGTH_SHORT
-                ).show()
-            }, imageClick = { item ->
-                Snackbar.make(
+                DetailActivity.navigateToDetail(this, item.id)
+            }, imageClick =  { item ->
+                val snackbar = Snackbar.make(
                     binding.root,
                     "Image clicked: ${item.title}",
                     Snackbar.LENGTH_SHORT
-                ).show()
+                )
+                val params = CoordinatorLayout.LayoutParams(snackbar.view.layoutParams)
+                params.gravity = Gravity.BOTTOM
+                params.setMargins(0, 0, 0, -binding.root.paddingBottom)
+                snackbar.view.layoutParams = params
+                snackbar.show()
             }
         )
         binding.rv.adapter = itemsAdapter
