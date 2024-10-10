@@ -1,25 +1,9 @@
 package com.ruben.WeatherApp.Utils;
 
-import org.json.simple.JSONArray;
-import org.json.simple.JSONObject;
-import org.json.simple.parser.JSONParser;
-import org.json.simple.parser.ParseException;
+import com.google.gson.Gson;
 
 public class JsonUtils {
-	public static void readFileJson(String url) {
-		Object obj;
-		try {
-			obj = new JSONParser().parse(InternetUtils.readUrl(url));
-			JSONObject jo = (JSONObject) obj;
-			
-			JSONArray weather = (JSONArray) jo.get("weather");
-			
-			weather.stream().forEach(e->System.out.println(e));
-			
-		} catch (ParseException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
-
+	public static <T> T readGeneric(String url, Class<T> clase) {
+		return new Gson().fromJson(InternetUtils.readUrl(url), clase);		
 	}
 }

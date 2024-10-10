@@ -1,0 +1,44 @@
+package com.ruben.WeatherApp.Entities;
+
+import com.google.gson.annotations.SerializedName;
+
+import lombok.AllArgsConstructor;
+import lombok.Data;
+
+@Data
+@AllArgsConstructor
+public class Location {
+	@SerializedName("name")
+	private String city;
+    @SerializedName("main")
+    private Main main;
+    @SerializedName("sys")
+    private Sys sys;
+
+    @Data
+    public static class Main{
+    	@SerializedName("temp")
+        private double tempKelvil;
+    	@SerializedName("humidity")
+    	private String humidity;
+    	
+    	public double getTempCelsius() {
+    		return tempKelvil - 273.15;
+    	}
+    }
+    
+    @Data
+    public static class Sys{
+    	@SerializedName("country")
+    	private String country;
+    }
+    
+    
+	@Override
+	public String toString() {
+		return "Location [city=" + city + "(" + sys.country + ")" +
+				", temp in celsius=" + main.tempKelvil + 
+				", temp in kelvin=" + String.format("%.2f", main.getTempCelsius()) +
+				", humidity= " + main.humidity + "]";
+	}
+}

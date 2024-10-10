@@ -3,13 +3,13 @@ import java.util.concurrent.Semaphore;
 
 public class Main extends Thread {
     private static Random random = new Random();
-    private static int[] contadores = {0, 0}; // Contadores para identificar coches de Gasolina y Diesel
-    private int tipo; // Tipo de combustible: 0 para gasolina, 1 para diésel
+    private static int[] contadores = {0, 0};
+    private int tipo;
 
     private static int enEsperaGasolina = 0, enEsperaDiesel = 0;
     private static int repostandoGasolina = 0, repostandoDiesel = 0;
 
-    private static Semaphore mutex = new Semaphore(1); // Mutex para proteger variables compartidas
+    private static Semaphore mutex = new Semaphore(1);
     private static Semaphore controlGasolina = new Semaphore(0); // Control para coches de gasolina
     private static Semaphore controlDiesel = new Semaphore(0); // Control para coches de diésel
 
@@ -58,11 +58,11 @@ public class Main extends Thread {
             } else { // Diésel
 
                 mutex.acquire();
-                while (repostandoDiesel >= 1) { // Solo 1 surtidor para Diésel
+                while (repostandoDiesel >= 1) {
                     enEsperaDiesel++;
                     System.out.printf("El conductor %d con coche de Diésel debe esperar, el surtidor está ocupado%n", id);
                     mutex.release();
-                    controlDiesel.acquire(); // Esperar hasta que se libere un surtidor
+                    controlDiesel.acquire();
                     mutex.acquire();
                     enEsperaDiesel--;
                 }
