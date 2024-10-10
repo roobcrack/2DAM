@@ -1,0 +1,12 @@
+package com.ruben.WheatherApp;
+
+import com.ruben.WeatherApp.Utils.InternetUtils;
+
+/**
+ * author: Ruben Martinez Martinez
+ */
+public class App {
+    public static void main(String[] args) {
+        InternetUtils.readUrl("https://api.football-data.org/v4/teams/86/matches?status=SCHEDULED", null);
+    }
+}

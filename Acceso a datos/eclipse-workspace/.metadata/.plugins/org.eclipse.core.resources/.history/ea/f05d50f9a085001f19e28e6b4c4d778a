@@ -1,0 +1,11 @@
+package com.ruben.WeatherApp.Utils;
+
+import org.json.simple.parser.JSONParser;
+
+public class JsonUtils {
+	
+	public static void readJsonFromUrl(String url, String token) {
+		Object obj;
+		obj = new JSONParser().parse(InternetUtils.readUrl(url, token));
+	}
+}

@@ -1,0 +1,8 @@
+package com.ruben.WeatherApp.Utils;
+
+import org.json.simple.parser.JSONParser;
+
+public class JsonUtils {
+	
+	
+}

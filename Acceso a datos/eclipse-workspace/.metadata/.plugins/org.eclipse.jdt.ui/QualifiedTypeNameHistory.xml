@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+    <fullyQualifiedTypeName name="com.ruben.prueba1.utilidades.FicherosUtils"/>
+    <fullyQualifiedTypeName name="java.nio.file.Paths"/>
+    <fullyQualifiedTypeName name="java.util.stream.Collectors"/>
+    <fullyQualifiedTypeName name="java.io.File"/>
+    <fullyQualifiedTypeName name="java.nio.file.Files"/>
+    <fullyQualifiedTypeName name="com.ruben.ficheros.interfaces.ISerializacionUtils"/>
+    <fullyQualifiedTypeName name="com.google.gson.Gson"/>
+    <fullyQualifiedTypeName name="org.xnio.conduits.AbstractSynchronizedSourceConduit"/>
+    <fullyQualifiedTypeName name="com.ruben.WeatherApp.Utils.InternetUtils"/>
+</qualifiedTypeNameHistroy>

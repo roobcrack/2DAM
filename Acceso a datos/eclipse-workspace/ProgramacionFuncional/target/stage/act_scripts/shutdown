@@ -1,0 +1,6 @@
+#!/bin/bash
+
+# update this line in case you have specified customised pid file other than "act.pid"
+PIDFILE=act.pid
+
+kill -15 $(<"$PIDFILE")
