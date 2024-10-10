@@ -16,6 +16,9 @@ public class JsonUtils {
 			
 			weather.stream().forEach(e->System.out.println(e));
 			
+			
+			
+			
 		} catch (ParseException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();

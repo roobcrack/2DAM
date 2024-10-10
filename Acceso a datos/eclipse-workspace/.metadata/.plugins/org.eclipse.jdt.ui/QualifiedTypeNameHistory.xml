@@ -9,4 +9,5 @@
     <fullyQualifiedTypeName name="com.google.gson.Gson"/>
     <fullyQualifiedTypeName name="org.xnio.conduits.AbstractSynchronizedSourceConduit"/>
     <fullyQualifiedTypeName name="com.ruben.WeatherApp.Utils.InternetUtils"/>
+    <fullyQualifiedTypeName name="com.ruben.WeatherApp.Utils.JsonUtils"/>
 </qualifiedTypeNameHistroy>

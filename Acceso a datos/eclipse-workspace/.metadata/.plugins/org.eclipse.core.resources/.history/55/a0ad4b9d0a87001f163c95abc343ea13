@@ -1,0 +1,17 @@
+package com.ruben.WeatherApp.Utils;
+
+import java.io.FileReader;
+
+import org.json.simple.JSONArray;
+import org.json.simple.JSONObject;
+import org.json.simple.parser.JSONParser;
+
+public class JsonUtils {
+	public static void readFileJson(String path) {
+		Object obj;
+		obj = new JSONParser().parse(new FileReader(path));
+		JSONObject jo = (JSONObject) obj;
+		
+		JSONArray weather = (JSONArray) jo.get("weather");
+	}
+}
