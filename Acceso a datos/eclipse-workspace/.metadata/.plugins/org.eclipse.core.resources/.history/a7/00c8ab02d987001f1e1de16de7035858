@@ -1,0 +1,32 @@
+package com.ruben.xmljson;
+
+import com.ruben.xmljson.utils.JsonUtils;
+import com.ruben.xmljson.entities.People;
+import com.ruben.xmljson.utils.InternetUtils;
+import com.ruben.xmljson.utils.XmlUtils;
+/**
+ * Hello world!
+ */
+public class App {
+	public static void pruebasXml() {
+    	//XmlUtils.processXmlSax();					//Only use for super big files
+    	//XmlUtils.processXmlDom();
+	}
+    public static void pruebasInternetUtils() {
+    	//System.out.println(InternetUtils.readUrl("https://swapi.dev/api/people/45/?format=json"));
+    	System.out.println(InternetUtils.readUrl("https://api.football-data.org/v4/teams/86/matches?status=SCHEDULED", "852d8181417144a0b6193a7fe8ed93ba"));	
+    }
+	public static void main(String[] args) {
+    	//pruebasInternetUtils();
+		
+		//JsonUtils.leerJsonDesdeFichero("C:/ficheros/swapi.dev.json");
+		//JsonUtils.leerJsonDesdeUrl("https://swapi.dev/api/people/1/?format=json");
+		
+		//JsonUtils.leerStarWars("https://swapi.dev/api/people/1/?format=json");
+		
+		
+		//Leer en generico un fiichero y volcarlo en un print
+		//System.out.println(JsonUtils.leerGenerico("https://swapi.dev/api/films/1/", People));
+		
+    }
+}

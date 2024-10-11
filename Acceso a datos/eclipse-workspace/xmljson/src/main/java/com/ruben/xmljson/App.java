@@ -10,15 +10,15 @@ import com.ruben.xmljson.utils.XmlUtils;
 public class App {
 	public static void pruebasXml() {
     	//XmlUtils.processXmlSax();					//Only use for super big files
-    	//XmlUtils.processXmlDom();
+    	XmlUtils.processXmlDom();
 	}
     public static void pruebasInternetUtils() {
     	//System.out.println(InternetUtils.readUrl("https://swapi.dev/api/people/45/?format=json"));
     	System.out.println(InternetUtils.readUrl("https://api.football-data.org/v4/teams/86/matches?status=SCHEDULED", "852d8181417144a0b6193a7fe8ed93ba"));	
     }
 	public static void main(String[] args) {
-    	pruebasInternetUtils();
-		
+    	//pruebasInternetUtils();
+		pruebasXml();
 		//JsonUtils.leerJsonDesdeFichero("C:/ficheros/swapi.dev.json");
 		//JsonUtils.leerJsonDesdeUrl("https://swapi.dev/api/people/1/?format=json");
 		

@@ -1,0 +1,41 @@
+//DUDAS
+//EL EJERCICIO 1 DICE ESPAÑOL Y YO LO HAGO EN INGLES
+//ES MEJOR DESGLOSARLO TODO EN LA CLASE ENTIDAD O EN EL JSON
+//EJERCICIO 2 NO ENTIENDO
+//HACER EJERCICIO FICHERO CON UNA CLASE Y CON PROGRAMACION FUNCIONAL
+
+package com.ruben.WheatherApp;
+
+import com.ruben.WeatherApp.Entities.Location;
+import com.ruben.WeatherApp.Utils.FilesUtils;
+import com.ruben.WeatherApp.Utils.JsonUtils;
+
+/**
+ * author: Ruben Martinez Martinez
+ */
+public class App {
+    public static void main(String[] args) {
+    	//showWheather();
+    	readTemperaturesFile();
+    }
+    
+    public static void showWheather() {
+        String lat = "38.3451";
+        String lon = "-0.4814";
+    	String apiKey = "30db9cad9c2ad82cbdf3d193bcd6c197";
+        String url = "https://api.openweathermap.org/data/2.5/weather?lat="+lat+"&lon="+lon+"&appid="+apiKey;
+        		
+    	Location location = JsonUtils.readGeneric(url, Location.class);
+    
+    	System.out.println(location.toString());
+    }
+    
+    /*public static void readTemperaturesFile() {
+    	String date = "2019-01-01";
+    	FilesUtils.returnFileListed("C://ficheros/datos.csv").stream()
+    		.filter(e->e.split(",")[5].contains(date))	
+    		.forEach(e->                                                                                                     
+    				System.out.println(e)
+    			);
+    }*/
+}
