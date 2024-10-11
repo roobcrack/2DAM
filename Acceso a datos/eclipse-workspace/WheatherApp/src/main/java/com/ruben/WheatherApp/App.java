@@ -1,3 +1,9 @@
+//DUDAS
+//EL EJERCICIO 1 DICE ESPAÑOL Y YO LO HAGO EN INGLES
+//ES MEJOR DESGLOSARLO TODO EN LA CLASE ENTIDAD O EN EL JSON
+//EJERCICIO 2 NO ENTIENDO
+//PUEDO SUBIR MIS UTILIDADES A MAVEN REPOSITORY
+
 package com.ruben.WheatherApp;
 
 import com.ruben.WeatherApp.Entities.Location;
@@ -9,13 +15,17 @@ import com.ruben.WeatherApp.Utils.JsonUtils;
  */
 public class App {
     public static void main(String[] args) {
+    	showWheather();
+    }
+    
+    public static void showWheather() {
+        String lat = "41.38879";
+        String lon = "2.15899";
     	String apiKey = "30db9cad9c2ad82cbdf3d193bcd6c197";
-        String lat = "38.3452";
-        String lon = "-0.4815";
         String url = "https://api.openweathermap.org/data/2.5/weather?lat="+lat+"&lon="+lon+"&appid="+apiKey;
         		
     	Location location = JsonUtils.readGeneric(url, Location.class);
     
-    System.out.println(location.toString());
+    	System.out.println(location.toString());
     }
 }
