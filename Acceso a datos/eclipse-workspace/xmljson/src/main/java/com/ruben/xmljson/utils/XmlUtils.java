@@ -15,47 +15,59 @@ import org.xml.sax.Attributes;
 import org.xml.sax.SAXException;
 import org.xml.sax.helpers.DefaultHandler;
 
-public class XmlUtils extends DefaultHandler {
-	public static void processXmlSax() {
+public class XmlUtils {
+
+	public static void procesarXmlSax() {
 		try {
 			SAXParserFactory saxParserFactory = SAXParserFactory.newInstance();
 			SAXParser saxParser = saxParserFactory.newSAXParser();
-			DefaultHandler eventsHandler = new DefaultHandler() {
-				String currentTag = "";
-				String content = "";
+			DefaultHandler manejadorEventos = new DefaultHandler() {
+				String etiquetaActual = "";
+				String contenido = "";
 
+				// Método que se llama al encontrar inicio de etiqueta: '<'
 				public void startElement(String uri, String localName, String qName, Attributes attributes)
 						throws SAXException {
-					currentTag = qName;
-					if (currentTag == "asignatura")
+					// Si el nombre es "asignatura",
+					// empieza una nueva y mostramos su id
+					// Si no, memorizamos el nombre para mostrar después
+					etiquetaActual = qName;
+					if (etiquetaActual == "asignatura")
 						System.out.println("Asignatura: " + attributes.getValue("id"));
 				}
 
+				// Obtiene los datos entre '<' y '>'
 				public void characters(char ch[], int start, int length) throws SAXException {
-					content = new String(ch, start, length);
+					contenido = new String(ch, start, length);
 				}
 
+				// Llamado al encontrar un fin de etiqueta: '>'
 				public void endElement(String uri, String localName, String qName) throws SAXException {
-					if (currentTag != "") {
-						System.out.println(" " + currentTag + ": " + content);
-						currentTag = "";
+
+					if (etiquetaActual != "") {
+						System.out.println(" " + etiquetaActual + ": " + contenido);
+						etiquetaActual = "";
 					}
 				}
 			};
-			saxParser.parse("C:/ficheros/asignatura.xml", eventsHandler);
+			// Cuerpo de la función: trata de analizar el fichero deseado
+			// Llamará a startElement(), endElement() y character()
+			saxParser.parse("C:/ficheros/asignaturas.xml", manejadorEventos);
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
 	}
 
-	public static void processXmlDom() {
+	public static void procesarAsignatura() {
 
 		try {
-			File inputFile = new File("C:/ficheros/asignatura.xml");
+			// Este bloque consigue que en "doc" tengamos un xml correcto
+			File inputFile = new File("C:/ficheros/asignaturas.xml");
 			DocumentBuilderFactory dbFactory = DocumentBuilderFactory.newInstance();
 			DocumentBuilder dBuilder = dbFactory.newDocumentBuilder();
 			Document doc = dBuilder.parse(inputFile);
 			doc.getDocumentElement().normalize();
+			///
 			System.out.println("Elemento base : " + doc.getDocumentElement().getNodeName());
 			NodeList nList = doc.getElementsByTagName("asignatura");
 			System.out.println();
@@ -77,6 +89,7 @@ public class XmlUtils extends DefaultHandler {
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
+
 	}
 
 }

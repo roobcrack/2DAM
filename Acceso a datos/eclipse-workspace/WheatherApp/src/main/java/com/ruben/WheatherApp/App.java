@@ -14,7 +14,8 @@ import com.ruben.WeatherApp.Utils.XmlUtils;
  */
 public class App {
     public static void main(String[] args) {
-    	//showWheatherJson();
+    	showWheatherJson();
+    	System.out.println("--------------------");
     	showWheatherXml();
     	//readTemperaturesFile();
     }
@@ -24,16 +25,14 @@ public class App {
         String lon = "-0.4814";
     	String apiKey = "30db9cad9c2ad82cbdf3d193bcd6c197";
         String url = "https://api.openweathermap.org/data/2.5/weather?lat="+lat+"&lon="+lon+"&lang=es"+"&units=metric"+"&appid="+apiKey;
-        		
-    	Location location = JsonUtils.readGeneric(url, Location.class);
-    
-    	System.out.println(location.toString());
+        
+    	System.out.println(JsonUtils.readGeneric(url, Location.class).toString());
     }
     
     public static void showWheatherXml() {
         String city = "Alicante";
     	String apiKey = "30db9cad9c2ad82cbdf3d193bcd6c197";
-    	String url = "https://api.openweathermap.org/data/2.5/weather?q="+city+"&lang=es&mode=xml&appid="+apiKey;
+    	String url = "https://api.openweathermap.org/data/2.5/weather?q="+city+"&lang=es&units=metric&mode=xml&appid="+apiKey;
     	
     	XmlUtils.readWeatherXml(url);
     }

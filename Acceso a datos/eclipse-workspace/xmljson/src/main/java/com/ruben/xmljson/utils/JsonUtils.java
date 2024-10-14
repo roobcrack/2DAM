@@ -4,7 +4,9 @@ import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
 import java.text.ParseException;
+import java.util.ArrayList;
 import java.util.Iterator;
+import java.util.List;
 import java.util.Map;
 
 import org.json.simple.JSONArray;
@@ -13,6 +15,7 @@ import org.json.simple.parser.JSONParser;
 
 import com.google.gson.Gson;
 import com.ruben.xmljson.entities.People;
+import com.ruben.xmljson.entities.Tareas;
 
 public class JsonUtils {
 	
@@ -103,5 +106,38 @@ public class JsonUtils {
 	
 	public static <T> T leerGenerico(String url, Class<T> clase) {
 		return new Gson().fromJson(InternetUtils.readUrl(url), clase);
+	}
+	
+	
+	
+	
+	
+	
+public static List<Tareas> devolverTareasInternet(String url) {
+		
+		Object obj;
+		List<Tareas> resultado = new ArrayList<Tareas>();
+		try {	
+			// cogiendo el array como elemento principal
+			JSONArray ja = (JSONArray) new JSONParser().parse(InternetUtils.readUrl(url));
+				
+			ja.forEach(e->{
+				JSONObject elementoObjeto = (JSONObject) e;
+				resultado.add(new Tareas(
+						(long) elementoObjeto.get("userId"),
+						(long) elementoObjeto.get("id"),
+						(String) elementoObjeto.get("title"),
+						(boolean) elementoObjeto.get("completed")						
+						));
+			});
+			
+			return resultado;
+			
+		} catch (Exception e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		} 
+		
+		return null;
 	}
 }
