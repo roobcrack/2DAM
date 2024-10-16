@@ -16,19 +16,35 @@ import com.ruben.WeatherApp.Entities.Location;
 
 public class XmlUtils {
 	
-	public static void readWeatherXml(String url) {
+	public static Document readXml(String url) {
+		
 		try {
+			
 			DocumentBuilderFactory dbFactory = DocumentBuilderFactory.newInstance();
 			DocumentBuilder dBuilder = dbFactory.newDocumentBuilder();
-			Document doc = dBuilder.parse(url);
-			doc.getDocumentElement().normalize();
-			Location location = new Location();
 			
-			NodeList nList = doc.getElementsByTagName("city");
+			return dBuilder.parse(url);
+		} catch (ParserConfigurationException e) {
+			e.printStackTrace();
+		} catch (SAXException e) {
+			e.printStackTrace();
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+		return null;
+	}
+
+	public static void readWeatherXml(String url) {
+			Document doc = readXml(url);
+			doc.getDocumentElement().normalize();
+			NodeList nList;
+
+			
+			nList = doc.getElementsByTagName("city");
 			Element eElement = (Element) nList.item(0);
-			location.() = eElement.getAttribute("name");
-			System.out.println("(" + eElement.getElementsByTagName("country").item(0).getTextContent()+")");
-			location.get
+			System.out.println("Country: " + eElement.getAttribute("name") + 
+					"(" + eElement.getElementsByTagName("country").item(0).getTextContent()+")");
+
 			nList = doc.getElementsByTagName("temperature");
             eElement = (Element) nList.item(0);
             System.out.println("Temperature: " + eElement.getAttribute("value") + "º (" + 
@@ -37,31 +53,14 @@ public class XmlUtils {
 			nList = doc.getElementsByTagName("humidity");
             eElement = (Element) nList.item(0);
             System.out.println("Humidity: " + eElement.getAttribute("value") + eElement.getAttribute("unit"));
-            
-			nList = doc.getElementsByTagName("weather");
+			
+            nList = doc.getElementsByTagName("clouds");
             eElement = (Element) nList.item(0);
-            System.out.println("Humidity: " + eElement.getAttribute("value") + eElement.getAttribute("unit"));
+            System.out.print("Humidity: " + eElement.getAttribute("name"));
+
+            nList = doc.getElementsByTagName("weather");
+            eElement = (Element) nList.item(0);
+            System.out.println(" (" + eElement.getAttribute("value") + ")");
 			
-			
-			System.out.println("Weather: ");
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-		} catch (ParserConfigurationException e) {
-			e.printStackTrace();
-		} catch (SAXException e) {
-			e.printStackTrace();
-		} catch (IOException e) {
-			e.printStackTrace();
-		}
 	}
 }

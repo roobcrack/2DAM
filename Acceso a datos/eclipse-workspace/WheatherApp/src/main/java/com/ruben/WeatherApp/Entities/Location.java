@@ -12,8 +12,7 @@ import lombok.Setter;
 @Data
 @AllArgsConstructor
 public class Location {
-    @Getter
-    @Setter
+
 	@SerializedName("name")
 	private String city;
     private Main main;

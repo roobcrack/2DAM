@@ -1,0 +1,46 @@
+package com.ruben.WheatherApp;
+
+import java.util.ArrayList;
+import java.util.List;
+import java.util.stream.Collectors;
+
+import com.ruben.WeatherApp.Entities.Location;
+import com.ruben.WeatherApp.Utils.FilesUtils;
+import com.ruben.WeatherApp.Utils.JsonUtils;
+import com.ruben.WeatherApp.Utils.XmlUtils;
+
+/**
+ * author: Ruben Martinez Martinez
+ */
+public class App {
+    public static void main(String[] args) {
+    	//showWheatherJson();
+    	//System.out.println("--------------------");
+    	//howWheatherXml();
+    	//readTemperaturesFile();
+    }
+    
+    public static void showWheatherJson() {
+        String lat = "38.3451";
+        String lon = "-0.4814";
+    	String apiKey = "30db9cad9c2ad82cbdf3d193bcd6c197";
+        String url = "https://api.openweathermap.org/data/2.5/weather?lat="+lat+"&lon="+lon+"&lang=es"+"&units=metric"+"&appid="+apiKey;
+        
+    	System.out.println(JsonUtils.readGeneric(url, Location.class).toString());
+    }
+    
+    public static void showWheatherXml() {
+        String city = "Alicante";
+    	String apiKey = "30db9cad9c2ad82cbdf3d193bcd6c197";
+    	String url = "https://api.openweathermap.org/data/2.5/weather?q="+city+"&lang=es&units=metric&mode=xml&appid="+apiKey;
+    	
+    	XmlUtils.readWeatherXml(url);
+    }
+    
+    public static void readTemperaturesFile() {
+    	String date = "2019-01-01";
+    	List<String> list = FilesUtils.returnFileListed("C://ficheros/datos.csv").stream()
+    		.filter(e->e.split(",")[5].contains(date))	
+    		.collect(Collectors.toList());
+    }
+}
