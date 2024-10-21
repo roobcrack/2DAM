@@ -34,33 +34,34 @@ public class XmlUtils {
 		return null;
 	}
 
-	public static void readWeatherXml(String url) {
+	public static Location readWeatherXml(String url) {
 			Document doc = readXml(url);
 			doc.getDocumentElement().normalize();
 			NodeList nList;
+			Location location = new Location();
 
 			
 			nList = doc.getElementsByTagName("city");
 			Element eElement = (Element) nList.item(0);
-			System.out.println("Country: " + eElement.getAttribute("name") + 
-					"(" + eElement.getElementsByTagName("country").item(0).getTextContent()+")");
+			location.setCity(eElement.getAttribute("name"));
+			location.getSys().setCountry(eElement.getElementsByTagName("country").item(0).getTextContent());
 
 			nList = doc.getElementsByTagName("temperature");
             eElement = (Element) nList.item(0);
-            System.out.println("Temperature: " + eElement.getAttribute("value") + "º (" + 
-            		((String.format("%.2f",Double.parseDouble(eElement.getAttribute("value")) + 273.15)) + "K)"));
+            location.getMain().setTemp(Double.parseDouble(eElement.getAttribute("value")));
             
 			nList = doc.getElementsByTagName("humidity");
             eElement = (Element) nList.item(0);
-            System.out.println("Humidity: " + eElement.getAttribute("value") + eElement.getAttribute("unit"));
-			
+            location.getMain().setHumidity(Integer.parseInt(eElement.getAttribute("value")));
+
             nList = doc.getElementsByTagName("clouds");
             eElement = (Element) nList.item(0);
-            System.out.print("Humidity: " + eElement.getAttribute("name"));
+            location.getWeather().get(0).setMain(eElement.getAttribute("name"));
 
             nList = doc.getElementsByTagName("weather");
             eElement = (Element) nList.item(0);
-            System.out.println(" (" + eElement.getAttribute("value") + ")");
-			
+            location.getWeather().get(0).setDescription(eElement.getAttribute("value"));	
+            
+            return location;
 	}
 }

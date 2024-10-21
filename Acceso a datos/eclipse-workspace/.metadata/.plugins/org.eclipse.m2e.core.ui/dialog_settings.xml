@@ -2,6 +2,7 @@
 <section name="Workbench">
 	<section name="MavenProjectWizardLocationPage">
 		<list key="location">
+			<item value="C:\Users\Roob\Desktop\2DAM\Acceso a datos\eclipse-workspace\WheatherApp\src\main\java\com\ruben\WheatherApp\App.java"/>
 			<item value="C:\Users\Roob\eclipse-workspace\xmljson\src\main\java\com\ruben\xmljson\utils\JsonUtils.java"/>
 		</list>
 		<list key="projectNameTemplate">
@@ -26,19 +27,13 @@
 	</section>
 	<section name="Maven2ProjectWizardArchifactPage">
 		<list key="package">
-			<item value="com.ruben.WheatherApp"/>
-			<item value="com.ruben.ProgramacionFuncional"/>
-			<item value="com.ruben.xmljson"/>
-			<item value="com.ruben.prueba1"/>
+			<item value="com.ruben.AngularTesting"/>
 		</list>
 		<list key="groupId">
 			<item value="com.ruben"/>
 		</list>
 		<list key="artifactId">
-			<item value="WheatherApp"/>
-			<item value="ProgramacionFuncional"/>
-			<item value="xmljson"/>
-			<item value="prueba1"/>
+			<item value="AngularTesting"/>
 		</list>
 		<list key="projectNameTemplate">
 			<item value="[artifactId]"/>
@@ -50,7 +45,6 @@
 		</list>
 		<list key="version">
 			<item value="0.0.1-SNAPSHOT"/>
-			<item value="1"/>
 		</list>
 	</section>
 	<section name="MavenProjectWizardArtifactPage">

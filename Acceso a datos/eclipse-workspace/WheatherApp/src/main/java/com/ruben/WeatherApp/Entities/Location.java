@@ -1,17 +1,15 @@
 package com.ruben.WeatherApp.Entities;
 
+import java.io.Serializable;
+import java.util.ArrayList;
 import java.util.List;
-
 import com.google.gson.annotations.SerializedName;
-
 import lombok.AllArgsConstructor;
 import lombok.Data;
-import lombok.Getter;
-import lombok.Setter;
 
 @Data
 @AllArgsConstructor
-public class Location {
+public class Location implements Serializable{
 
 	@SerializedName("name")
 	private String city;
@@ -19,27 +17,108 @@ public class Location {
     private Sys sys;
     private List<Weather> weather;
     
-    public static class Sys{
+    public Location() {
+    	this.main = new Main();
+    	this.sys = new Sys();
+    	this.weather = new ArrayList<Weather>();
+    	this.weather.add(new Location.Weather());
+    }
+    public static class Sys implements Serializable{
     	private String country;
+
+		public String getCountry() {
+			return country;
+		}
+
+		public void setCountry(String country) {
+			this.country = country;
+		}
     }
     
-    public static class Main{
-    	@SerializedName("temp")
+    public static class Main implements Serializable{
         private double temp; 
-    	private String humidity;
+    	private int humidity;
     	
-    	public double getTempKelvin() {
+    	public double getTemp() {
+			return temp;
+		}
+
+		public void setTemp(double temp) {
+			this.temp = temp;
+		}
+
+		public int getHumidity() {
+			return humidity;
+		}
+
+		public void setHumidity(int humidity) {
+			this.humidity = humidity;
+		}
+
+		public double getTempKelvin() {
     		return temp + 273.15;
     	}
     }
     
-    @Data
-    public static class Weather {
+    public static class Weather implements Serializable{
         private String main;
-        private String description;
+		private String description;
+
+        public String getMain() {
+			return main;
+		}
+		public void setMain(String main) {
+			this.main = main;
+		}
+		public String getDescription() {
+			return description;
+		}
+		public void setDescription(String description) {
+			this.description = description;
+		}
     }
     
     
+	public String getCity() {
+		return city;
+	}
+
+
+	public void setCity(String city) {
+		this.city = city;
+	}
+
+
+	public Main getMain() {
+		return main;
+	}
+
+
+	public void setMain(Main main) {
+		this.main = main;
+	}
+
+
+	public Sys getSys() {
+		return sys;
+	}
+
+
+	public void setSys(Sys sys) {
+		this.sys = sys;
+	}
+
+
+	public List<Weather> getWeather() {
+		return weather;
+	}
+
+
+	public void setWeather(List<Weather> weather) {
+		this.weather = weather;
+	}
+
+
 	@Override
 	public String toString() {
 		return "City: " + city + "(" + sys.country + ")" +

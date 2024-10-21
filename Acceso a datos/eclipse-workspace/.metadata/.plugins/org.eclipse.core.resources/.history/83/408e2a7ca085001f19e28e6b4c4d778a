@@ -1,6 +1,0 @@
-package com.ruben.WeatherApp.Utils;
-
-public class JsonUtils {
-	
-	public static void readJsonFromUrl()
-}

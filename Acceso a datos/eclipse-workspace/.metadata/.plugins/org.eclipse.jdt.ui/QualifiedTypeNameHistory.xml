@@ -13,4 +13,9 @@
     <fullyQualifiedTypeName name="com.google.gson.annotations.SerializedName"/>
     <fullyQualifiedTypeName name="javax.swing.text.Document"/>
     <fullyQualifiedTypeName name="com.ruben.WeatherApp.Utils.XmlUtils"/>
+    <fullyQualifiedTypeName name="java.util.Collections"/>
+    <fullyQualifiedTypeName name="com.ruben.WeatherApp.Utils.SerializationUtils"/>
+    <fullyQualifiedTypeName name="com.ruben.WeatherApp.Utils.SerializeUtils"/>
+    <fullyQualifiedTypeName name="com.ruben.WeatherApp.Entities.Location.Weather"/>
+    <fullyQualifiedTypeName name="org.apache.catalina.realm.JNDIRealm.User"/>
 </qualifiedTypeNameHistroy>

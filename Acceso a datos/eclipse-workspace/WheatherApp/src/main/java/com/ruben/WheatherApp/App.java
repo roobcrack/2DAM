@@ -1,6 +1,7 @@
 package com.ruben.WheatherApp;
 
-import java.util.ArrayList;
+import java.time.LocalDate;
+import java.time.format.DateTimeFormatter;
 import java.util.List;
 import java.util.Map;
 import java.util.TreeMap;
@@ -9,6 +10,7 @@ import java.util.stream.Collectors;
 import com.ruben.WeatherApp.Entities.Location;
 import com.ruben.WeatherApp.Utils.FilesUtils;
 import com.ruben.WeatherApp.Utils.JsonUtils;
+import com.ruben.WeatherApp.Utils.SerializeUtils;
 import com.ruben.WeatherApp.Utils.XmlUtils;
 
 /**
@@ -16,10 +18,13 @@ import com.ruben.WeatherApp.Utils.XmlUtils;
  */
 public class App {
 	public static void main(String[] args) {
-		// showWheatherJson();
-		// System.out.println("--------------------");
-		// showWheatherXml();
+		showWheatherJson();
+		System.out.println("--------------------");
+		showWheatherXml();
+		System.out.println("--------------------");
 		readTemperaturesFile();
+		System.out.println("--------------------");
+		System.out.println(SerializeUtils.deserializeObject("C:/ficheros/" + LocalDate.now().toString() + ".txt").toString());
 	}
 
 	public static void showWheatherJson() {
@@ -29,7 +34,10 @@ public class App {
 		String url = "https://api.openweathermap.org/data/2.5/weather?lat=" + lat + "&lon=" + lon + "&lang=es"
 				+ "&units=metric" + "&appid=" + apiKey;
 
-		System.out.println(JsonUtils.readGeneric(url, Location.class).toString());
+		Location location = JsonUtils.readGeneric(url, Location.class);
+		System.out.println(location.toString());
+		SerializeUtils.serializeObject("C:/ficheros/" + LocalDate.now().toString() + ".txt",
+				JsonUtils.readGeneric(url, Location.class));
 	}
 
 	public static void showWheatherXml() {
@@ -38,26 +46,45 @@ public class App {
 		String url = "https://api.openweathermap.org/data/2.5/weather?q=" + city
 				+ "&lang=es&units=metric&mode=xml&appid=" + apiKey;
 
-		XmlUtils.readWeatherXml(url);
+		System.out.println(XmlUtils.readWeatherXml(url).toString());
 	}
 
 	public static void readTemperaturesFile() {
 		String dateFrom = "2019-01-01";
-        String dateTo = "2019-03-30";
+        String dateTo = "2019-01-30";
 
-        // Suponiendo que las fechas están en el índice 5
-        Map<String, String> temperaturesMap = FilesUtils.returnFileListed("C://ficheros/datos.csv").stream()
-            .filter(e -> {
-                String date = e.split(",")[5];
-                return date.compareTo(dateFrom) >= 0 && date.compareTo(dateTo) <= 0;  // Filtra por rango de fechas
+        // Formato de las fechas
+        DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd");
+        
+        // Convertimos las cadenas de fecha a LocalDate
+        LocalDate startDate = LocalDate.parse(dateFrom, formatter);
+        LocalDate endDate = LocalDate.parse(dateTo, formatter);
+        
+        // Lista con las fechas en el rango dado
+        List<LocalDate> dateList = startDate.datesUntil(endDate.plusDays(1))
+                .collect(Collectors.toList());
+        
+        // Para cada fecha, obtenemos un mapa de temperaturas
+        List<Map<String, String>> temperaturesList = dateList.stream()
+            .map(date -> {
+                String currentDate = date.format(formatter);
+                System.out.print(currentDate + " ");
+                
+                // Filtramos por la fecha actual y mapeamos los datos
+                Map<String, String> temperaturesMap = FilesUtils.returnFileListed("C://ficheros/datos.csv").stream()
+                        .filter(e -> e.split(",")[5].contains(currentDate))
+                        .collect(Collectors.toMap(
+                                e -> e.substring(81, 86), //Key (hora)
+                                e -> e.split(",")[6], //Value (temperatura)
+                                (oldValue, newValue) -> oldValue, //No toma valores repetidos
+                                TreeMap::new)); //Pone en orden
+                
+                // Imprimir las horas y temperaturas
+                temperaturesMap.forEach((hour, temperature) -> System.out.print(hour + "->" + temperature + " "));
+                System.out.println();
+                
+                return temperaturesMap; // Retornar el mapa de temperaturas para cada fecha
             })
-            .collect(Collectors.toMap(
-                e -> e.substring(81, 86).trim(),   // Extrae la hora
-                e -> e.split(",")[6],              // Extrae la temperatura
-                (oldValue, newValue) -> oldValue,  // Si hay duplicados, mantiene el primero
-                TreeMap::new))                     // Ordenar por clave (horas)
-            .entrySet().stream()                   // Para la impresión
-            .peek(entry -> System.out.print(entry.getKey() + "->" + entry.getValue() + "º "))
-            .collect(Collectors.toMap(Map.Entry::getKey, Map.Entry::getValue));  // Recolectar el Map
-	}
+            .collect(Collectors.toList()); // Recogemos todo en una lista de mapas
+    }
 }

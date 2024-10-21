@@ -1,7 +1,0 @@
-package com.ruben.WeatherApp.Utils;
-
-public class JsonUtils {
-	public static <T> T leerGenerico(String url, Class<T> clase) {
-		return new Gson().fromJson(InternetUtils.readUrl(url), clase);		
-	}
-}
