@@ -2,6 +2,7 @@
 <section name="Workbench">
 	<section name="MavenProjectWizardLocationPage">
 		<list key="location">
+			<item value="C:\Users\Roob\Desktop\2DAM\Acceso a datos\eclipse-workspace\WheatherApp\pom.xml"/>
 			<item value="C:\Users\Roob\Desktop\2DAM\Acceso a datos\eclipse-workspace\WheatherApp\src\main\java\com\ruben\WheatherApp\App.java"/>
 			<item value="C:\Users\Roob\eclipse-workspace\xmljson\src\main\java\com\ruben\xmljson\utils\JsonUtils.java"/>
 		</list>
@@ -27,13 +28,10 @@
 	</section>
 	<section name="Maven2ProjectWizardArchifactPage">
 		<list key="package">
-			<item value="com.ruben.AngularTesting"/>
 		</list>
 		<list key="groupId">
-			<item value="com.ruben"/>
 		</list>
 		<list key="artifactId">
-			<item value="AngularTesting"/>
 		</list>
 		<list key="projectNameTemplate">
 			<item value="[artifactId]"/>
