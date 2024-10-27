@@ -1,0 +1,99 @@
+<div class="layout">
+  <div class="content">
+
+    <button (click)="getLocationData()">Actualizar Datos</button>
+    <div class="tabs">
+      <div class="tab" [class.active]="selectedTab === 'Opt1'" (click)="selectOption('Opt1')">Coordenades</div>
+      <div class="tab" [class.active]="selectedTab === 'Opt2'" (click)="selectOption('Opt2')">City name</div>
+      <div class="tab" [class.active]="selectedTab === 'Opt3'" (click)="selectOption('Opt3')">Date ratio</div>
+    </div>
+    
+    <div class="content-dynamic">
+      <div class="dynamic-content">
+          @switch(selectedTab) {
+              @case('Opt1') {
+                  <app-opt1 class="opt"></app-opt1>
+              } @case('Opt2') {
+                  <app-opt2 class="opt"></app-opt2>
+              } @case('Opt3') {
+                  <app-opt3 class="opt"></app-opt3>
+              }
+          }
+      </div>
+    
+        <div class="weatherData">
+            <h2>Weather Information</h2>
+            <p>City: {{ test?.name }}</p>
+            <p>Temperature: {{ test?.main?.temp }} °C</p>
+            <p>Humidity: {{ test?.main?.humidity }} %</p>
+        </div>
+  </div>
+
+    <div class="five-days">
+      <div class="five-head">
+        <h2 class="tit">Weather for the next 5 days</h2>
+        <div class="loc">{{test?.name}}</div>
+      </div>
+      <div class="box-container">
+        <div class="box">
+          <h4>Day 1</h4>
+          <h2>00°C</h2>
+          <p class="humidity">Humidity: 100%</p>
+        </div>
+        <div class="box">
+          <h4>Day 2</h4>
+          <h2>00°C</h2>
+          <p class="humidity">Humidity: 100%</p>
+        </div>
+        <div class="box">
+          <h4>Day 3</h4>
+          <h2>00°C</h2>
+          <p class="humidity">Humidity: 100%</p>
+        </div>
+        <div class="box">
+          <h4>Day 4</h4>
+          <h2>00°C</h2>
+          <p class="humidity">Humidity: 100%</p>
+        </div>
+        <div class="box">
+          <h4>Day 5</h4>
+          <h2>00°C</h2>
+          <p class="humidity">Humidity: 100%</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="right-sidebar">
+    <div class="sidebar-item">
+      <h4 class="date">01/01/2000</h4>
+      <h2 class="city">Alicante</h2>
+      <h2 class="temperature">00°C</h2>
+      <p class="humidity">Humidity: 100%</p>
+    </div>
+    <div class="sidebar-item">
+      <h4 class="date">01/01/2000</h4>
+      <h2 class="city">Barcelona</h2>
+      <h2 class="temperature">00°C</h2>
+      <p class="humidity">Humidity: 100%</p>
+    </div>
+    <div class="sidebar-item">
+      <h4 class="date">01/01/2000</h4>
+      <h2 class="city">Malag  a</h2>
+      <h2 class="temperature">00°C</h2>
+      <p class="humidity">Humidity: 100%</p>
+    </div>
+    <div class="sidebar-item">
+      <h4 class="date">01/01/2000</h4>
+      <h2 class="city">Valencia</h2>
+      <h2 class="temperature">00°C</h2>
+      <p class="humidity">Humidity: 100%</p>
+    </div>
+    <div class="sidebar-item">
+      <h4 class="date">01/01/2000</h4>
+      <h2 class="city">Madrid</h2>
+      <h2 class="temperature">00°C</h2>
+      <p class="humidity">Humidity: 100%</p>
+    </div>
+  </div>
+</div>

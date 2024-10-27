@@ -7,6 +7,9 @@ import java.util.Map;
 import java.util.TreeMap;
 import java.util.stream.Collectors;
 
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+
 import com.ruben.WeatherApp.Entities.Location;
 import com.ruben.WeatherApp.Utils.FilesUtils;
 import com.ruben.WeatherApp.Utils.JsonUtils;
@@ -16,15 +19,17 @@ import com.ruben.WeatherApp.Utils.XmlUtils;
 /**
  * author: Ruben Martinez Martinez
  */
+@SpringBootApplication
 public class App {
 	public static void main(String[] args) {
-		showWheatherJson();
+        SpringApplication.run(App.class, args);
+	/*	showWheatherJson();
 		System.out.println("--------------------");
 		showWheatherXml();
 		System.out.println("--------------------");
 		readTemperaturesFile();
 		System.out.println("--------------------");
-		System.out.println(SerializeUtils.deserializeObject("C:/ficheros/" + LocalDate.now().toString() + ".txt").toString());
+		System.out.println(SerializeUtils.deserializeObject("C:/ficheros/" + LocalDate.now().toString() + ".txt").toString()); */
 	}
 
 	public static void showWheatherJson() {
