@@ -22,7 +22,6 @@ import com.ruben.WeatherApp.Utils.XmlUtils;
 @SpringBootApplication
 public class App {
 	public static void main(String[] args) {
-        SpringApplication.run(App.class, args);
 	/*	showWheatherJson();
 		System.out.println("--------------------");
 		showWheatherXml();
@@ -58,38 +57,32 @@ public class App {
 		String dateFrom = "2019-01-01";
         String dateTo = "2019-01-30";
 
-        // Formato de las fechas
         DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd");
         
-        // Convertimos las cadenas de fecha a LocalDate
         LocalDate startDate = LocalDate.parse(dateFrom, formatter);
         LocalDate endDate = LocalDate.parse(dateTo, formatter);
         
-        // Lista con las fechas en el rango dado
         List<LocalDate> dateList = startDate.datesUntil(endDate.plusDays(1))
                 .collect(Collectors.toList());
         
-        // Para cada fecha, obtenemos un mapa de temperaturas
         List<Map<String, String>> temperaturesList = dateList.stream()
             .map(date -> {
                 String currentDate = date.format(formatter);
                 System.out.print(currentDate + " ");
                 
-                // Filtramos por la fecha actual y mapeamos los datos
                 Map<String, String> temperaturesMap = FilesUtils.returnFileListed("C://ficheros/datos.csv").stream()
                         .filter(e -> e.split(",")[5].contains(currentDate))
                         .collect(Collectors.toMap(
-                                e -> e.substring(81, 86), //Key (hora)
-                                e -> e.split(",")[6], //Value (temperatura)
-                                (oldValue, newValue) -> oldValue, //No toma valores repetidos
-                                TreeMap::new)); //Pone en orden
+                                e -> e.substring(81, 86),
+                                e -> e.split(",")[6],
+                                (oldValue, newValue) -> oldValue,
+                                TreeMap::new));
                 
-                // Imprimir las horas y temperaturas
                 temperaturesMap.forEach((hour, temperature) -> System.out.print(hour + "->" + temperature + " "));
                 System.out.println();
                 
-                return temperaturesMap; // Retornar el mapa de temperaturas para cada fecha
+                return temperaturesMap;
             })
-            .collect(Collectors.toList()); // Recogemos todo en una lista de mapas
+            .collect(Collectors.toList());
     }
 }

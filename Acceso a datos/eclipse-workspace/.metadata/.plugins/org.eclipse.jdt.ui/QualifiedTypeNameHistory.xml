@@ -18,4 +18,6 @@
     <fullyQualifiedTypeName name="com.ruben.WeatherApp.Utils.SerializeUtils"/>
     <fullyQualifiedTypeName name="com.ruben.WeatherApp.Entities.Location.Weather"/>
     <fullyQualifiedTypeName name="org.apache.catalina.realm.JNDIRealm.User"/>
+    <fullyQualifiedTypeName name="com.ruben.WebtherChecker.Utils.JsonUtils"/>
+    <fullyQualifiedTypeName name="com.ruben.WebtherChecker.Utils.SerializeUtils"/>
 </qualifiedTypeNameHistroy>
