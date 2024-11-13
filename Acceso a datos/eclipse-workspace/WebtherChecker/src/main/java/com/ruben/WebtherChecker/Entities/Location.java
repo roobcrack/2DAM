@@ -3,24 +3,27 @@ package com.ruben.WebtherChecker.Entities;
 import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
+
 import com.google.gson.annotations.SerializedName;
+
 import lombok.AllArgsConstructor;
 import lombok.Data;
 
 @Data
 @AllArgsConstructor
 public class Location implements Serializable{
+	private static final long serialVersionUID = 1L;
 
 	@SerializedName("name")
 	private String city;
     private Main main;
     private Sys sys;
     private List<Weather> weather;
-    
+
     public Location() {
     	this.main = new Main();
     	this.sys = new Sys();
-    	this.weather = new ArrayList<Weather>();
+    	this.weather = new ArrayList<>();
     	this.weather.add(new Location.Weather());
     }
     public static class Sys implements Serializable{
@@ -34,11 +37,13 @@ public class Location implements Serializable{
 			this.country = country;
 		}
     }
-    
+
     public static class Main implements Serializable{
-        private double temp; 
+    	private static final long serialVersionUID = 1L;
+
+        private double temp;
     	private int humidity;
-    	
+
     	public double getTemp() {
 			return temp;
 		}
@@ -59,8 +64,10 @@ public class Location implements Serializable{
     		return temp + 273.15;
     	}
     }
-    
+
     public static class Weather implements Serializable{
+    	private static final long serialVersionUID = 1L;
+
         private String main;
 		private String description;
 
@@ -77,8 +84,8 @@ public class Location implements Serializable{
 			this.description = description;
 		}
     }
-    
-    
+
+
 	public String getCity() {
 		return city;
 	}
