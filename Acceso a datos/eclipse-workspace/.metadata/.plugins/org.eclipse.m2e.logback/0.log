@@ -7999,3 +7999,6 @@ org.apache.maven.project.ProjectBuildingException: Some problems were encountere
 2024-10-25 20:10:35,238 [Worker-201: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Roob\Desktop\2DAM\Acceso a datos\eclipse-workspace\WebtherChecker\src\test\resources
 2024-10-25 20:12:12,526 [Worker-202: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Roob\Desktop\2DAM\Acceso a datos\eclipse-workspace\WebtherChecker\src\main\resources
 2024-10-25 20:12:12,530 [Worker-202: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Roob\Desktop\2DAM\Acceso a datos\eclipse-workspace\WebtherChecker\src\test\resources
+2024-10-27 12:12:50,638 [Worker-4: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is out-of-date. Trying to update.
+2024-10-27 12:13:13,974 [Worker-7: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2024-10-27 12:18:18,752 [Worker-6: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
