@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Roob\\Desktop\\ej\\ej\\ej.csproj",
+      "projectUniqueName": "C:\\Users\\Roob\\Desktop\\2DAM\\Desarrollo de interfaces\\UD2 Actividades\\Vectores\\ej\\ej.csproj",
       "projectName": "ej",
-      "projectPath": "C:\\Users\\Roob\\Desktop\\ej\\ej\\ej.csproj",
+      "projectPath": "C:\\Users\\Roob\\Desktop\\2DAM\\Desarrollo de interfaces\\UD2 Actividades\\Vectores\\ej\\ej.csproj",
       "packagesPath": "C:\\Users\\Roob\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Roob\\Desktop\\ej\\ej\\obj\\",
+      "outputPath": "C:\\Users\\Roob\\Desktop\\2DAM\\Desarrollo de interfaces\\UD2 Actividades\\Vectores\\ej\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Roob\\AppData\\Roaming\\NuGet\\NuGet.Config",

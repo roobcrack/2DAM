@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Roob\\Desktop\\Complejos\\Complejos\\Complejos.csproj": {}
+    "C:\\Users\\Roob\\Desktop\\2DAM\\Desarrollo de interfaces\\UD2 Actividades\\Complejos\\Complejos\\Complejos.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Roob\\Desktop\\Complejos\\Complejos\\Complejos.csproj": {
+    "C:\\Users\\Roob\\Desktop\\2DAM\\Desarrollo de interfaces\\UD2 Actividades\\Complejos\\Complejos\\Complejos.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Roob\\Desktop\\Complejos\\Complejos\\Complejos.csproj",
+        "projectUniqueName": "C:\\Users\\Roob\\Desktop\\2DAM\\Desarrollo de interfaces\\UD2 Actividades\\Complejos\\Complejos\\Complejos.csproj",
         "projectName": "Complejos",
-        "projectPath": "C:\\Users\\Roob\\Desktop\\Complejos\\Complejos\\Complejos.csproj",
+        "projectPath": "C:\\Users\\Roob\\Desktop\\2DAM\\Desarrollo de interfaces\\UD2 Actividades\\Complejos\\Complejos\\Complejos.csproj",
         "packagesPath": "C:\\Users\\Roob\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Roob\\Desktop\\Complejos\\Complejos\\obj\\",
+        "outputPath": "C:\\Users\\Roob\\Desktop\\2DAM\\Desarrollo de interfaces\\UD2 Actividades\\Complejos\\Complejos\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Roob\\AppData\\Roaming\\NuGet\\NuGet.Config",
