@@ -1,0 +1,189 @@
+/* Estilos globales */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f1f3f6;
+    color: #333;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Estilos para la cabecera y navegación */
+header {
+    background-color: #007BFF;
+    color: white;
+    width: 100%;
+    padding: 20px 0;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 0 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #FFD700;
+}
+
+/* Estilos del contenedor principal */
+main {
+    width: 100%;
+    max-width: 600px;
+    padding: 20px;
+    margin: 80px auto 20px; /* Agregado un margen superior para dejar espacio debajo del header */
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 1s ease;
+}
+.contenedor{
+    margin-top: 180px;
+}
+
+/* Estilos de los campos del formulario */
+h1 {
+    text-align: center;
+    color: #333;
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+/* Estilos de los campos del formulario */
+form input, form button {
+    padding: 15px;
+    font-size: 16px;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+}
+
+form input:focus, form button:focus {
+    outline: none;
+    border-color: #007BFF;
+    box-shadow: 0 0 8px rgba(0, 123, 255, 0.4);
+}
+
+form button {
+    background-color: #007BFF;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+    border: none;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+form button:hover {
+    background-color: #0056b3;
+    transform: translateY(-3px);
+}
+
+form button:active {
+    transform: translateY(0);
+}
+
+/* Estilos para la pantalla pública */
+.pantalla-publica p {
+    font-size: 1.2rem;
+    margin: 10px 0;
+    background-color: #f0f8ff;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.pantalla-publica p strong {
+    color: #007BFF;
+}
+
+/* Estilos para la tabla de gestión de clientes */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table th, table td {
+    padding: 15px;
+    text-align: left;
+    border-bottom: 1px solid #f1f3f6;
+}
+
+table th {
+    background-color: #007BFF;
+    color: white;
+}
+
+table tr:hover {
+    background-color: #f1f8ff;
+    cursor: pointer;
+}
+
+table button {
+    background-color: #28a745;
+    color: white;
+    padding: 8px 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+table button:hover {
+    background-color: #218838;
+}
+
+/* Footer */
+footer {
+    background-color: #007BFF;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    z-index: 10;
+}
+
+/* Animación */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
