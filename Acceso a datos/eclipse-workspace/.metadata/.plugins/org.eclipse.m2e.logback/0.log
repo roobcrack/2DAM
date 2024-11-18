@@ -7999,6 +7999,11 @@ org.apache.maven.project.ProjectBuildingException: Some problems were encountere
 2024-10-25 20:10:35,238 [Worker-201: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Roob\Desktop\2DAM\Acceso a datos\eclipse-workspace\WebtherChecker\src\test\resources
 2024-10-25 20:12:12,526 [Worker-202: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Roob\Desktop\2DAM\Acceso a datos\eclipse-workspace\WebtherChecker\src\main\resources
 2024-10-25 20:12:12,530 [Worker-202: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Roob\Desktop\2DAM\Acceso a datos\eclipse-workspace\WebtherChecker\src\test\resources
+<<<<<<< HEAD
+2024-10-27 12:12:50,638 [Worker-4: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is out-of-date. Trying to update.
+2024-10-27 12:13:13,974 [Worker-7: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2024-10-27 12:18:18,752 [Worker-6: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+=======
 2024-10-27 12:24:16,014 [Worker-209: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Roob\Desktop\2DAM\Acceso a datos\eclipse-workspace\WebtherChecker\src\main\resources
 2024-10-27 12:24:16,022 [Worker-209: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Roob\Desktop\2DAM\Acceso a datos\eclipse-workspace\WebtherChecker\src\test\resources
 2024-10-27 12:24:50,710 [Worker-205: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Roob\Desktop\2DAM\Acceso a datos\eclipse-workspace\WebtherChecker\src\main\resources
@@ -8773,6 +8778,7 @@ org.apache.maven.project.ProjectBuildingException: Some problems were encountere
 2024-10-31 16:33:41,898 [Worker-453: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Roob\Desktop\2DAM\Acceso a datos\eclipse-workspace\WebtherChecker\src\main\resources
 2024-10-31 16:33:41,901 [Worker-453: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Roob\Desktop\2DAM\Acceso a datos\eclipse-workspace\WebtherChecker\src\test\resources
 2024-11-08 15:11:55,192 [Worker-4: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is out-of-date. Trying to update.
+<<<<<<< HEAD
 2024-11-14 17:29:13,361 [Worker-2: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is out-of-date. Trying to update.
 2024-11-14 17:29:26,611 [Worker-10: Launching WebtherChecker - App] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-maven-plugin/maven-metadata.xml
 2024-11-14 17:29:26,647 [Worker-10: Launching WebtherChecker - App] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-maven-plugin/maven-metadata.xml
@@ -8789,3 +8795,6 @@ org.apache.maven.project.ProjectBuildingException: Some problems were encountere
 2024-11-14 17:29:34,786 [Worker-27: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Roob\Desktop\2DAM\Acceso a datos\eclipse-workspace\xmljson\src\main\resources
 2024-11-14 17:29:34,792 [Worker-27: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Roob\Desktop\2DAM\Acceso a datos\eclipse-workspace\xmljson\src\test\resources
 2024-11-14 19:42:02,299 [Worker-4: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+=======
+>>>>>>> bd02fc311d7d6da80864b77e50489c619e1b31fb
+>>>>>>> b119a5aa01d0d12a12649294faa1c5672ff3c07f
