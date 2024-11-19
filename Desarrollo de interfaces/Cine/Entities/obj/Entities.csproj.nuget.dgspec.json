@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Roob\\Desktop\\Cine\\Entities\\Entities.csproj": {}
+    "C:\\Users\\Roob\\Desktop\\2DAM\\Desarrollo de interfaces\\Cine\\Entities\\Entities.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Roob\\Desktop\\Cine\\Entities\\Entities.csproj": {
+    "C:\\Users\\Roob\\Desktop\\2DAM\\Desarrollo de interfaces\\Cine\\Entities\\Entities.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Roob\\Desktop\\Cine\\Entities\\Entities.csproj",
+        "projectUniqueName": "C:\\Users\\Roob\\Desktop\\2DAM\\Desarrollo de interfaces\\Cine\\Entities\\Entities.csproj",
         "projectName": "Entities",
-        "projectPath": "C:\\Users\\Roob\\Desktop\\Cine\\Entities\\Entities.csproj",
+        "projectPath": "C:\\Users\\Roob\\Desktop\\2DAM\\Desarrollo de interfaces\\Cine\\Entities\\Entities.csproj",
         "packagesPath": "C:\\Users\\Roob\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Roob\\Desktop\\Cine\\Entities\\obj\\",
+        "outputPath": "C:\\Users\\Roob\\Desktop\\2DAM\\Desarrollo de interfaces\\Cine\\Entities\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Roob\\AppData\\Roaming\\NuGet\\NuGet.Config",

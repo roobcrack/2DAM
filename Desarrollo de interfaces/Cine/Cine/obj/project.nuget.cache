@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "juE+tgYCtC92i3WkyhJ6Aax3Yfcm8csEqiJHis4ExKI4+EVMUfwqXrJInj2F/GPB9SPDtA3chqVC5edL1HvgMw==",
+  "dgSpecHash": "e/pvTVAybEseVMb7erWPiXWdDdklGDldcq+mh+qeOHFWAXAEuCilwUlO1BV8ZvkrpjHTIyJ7MhUTwn0HxAod8A==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Roob\\Desktop\\Cine\\Cine\\Presentation.csproj",
+  "projectFilePath": "C:\\Users\\Roob\\Desktop\\2DAM\\Desarrollo de interfaces\\Cine\\Cine\\Presentation.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Roob\\.nuget\\packages\\bouncycastle.cryptography\\2.3.1\\bouncycastle.cryptography.2.3.1.nupkg.sha512",
     "C:\\Users\\Roob\\.nuget\\packages\\google.protobuf\\3.26.1\\google.protobuf.3.26.1.nupkg.sha512",
