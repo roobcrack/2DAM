@@ -25,12 +25,13 @@ import com.ruben.WebtherChecker.Utils.XmlUtils;
 @RestController
 @RequestMapping("/api")
 public class WeatherController {
+	private String startUrl = "https://api.openweathermap.org/data/2.5/";
 	private String apiKey = "30db9cad9c2ad82cbdf3d193bcd6c197";
 
     @GetMapping("/coords")
     public String getLocation(@RequestParam("latitude") double latitude,
                               @RequestParam("longitude") double longitude) {
-        String url = "https://api.openweathermap.org/data/2.5/weather?lat=" + latitude
+        String url = startUrl+"weather?lat=" + latitude
                      + "&lon=" + longitude + "&lang=es&units=metric&appid=" + apiKey;
 
         Location location = JsonUtils.readGeneric(url, Location.class);
@@ -40,8 +41,7 @@ public class WeatherController {
 
     @GetMapping("/namec")
     public String getLocationName(@RequestParam("city") String city) {
-		String apiKey = "30db9cad9c2ad82cbdf3d193bcd6c197";
-		String url = "https://api.openweathermap.org/data/2.5/weather?q=" + city
+		String url = startUrl + "weather?q=" + city
 				+ "&lang=es&units=metric&mode=xml&appid=" + apiKey;
 
 		Location location = XmlUtils.readWeatherXml(url);
@@ -60,12 +60,12 @@ public class WeatherController {
     @GetMapping("/coords5days")
     public String getNext5DaysCoords(@RequestParam("latitude") double latitude,
             					@RequestParam("longitude") double longitude) {
-        return getNext5Days("https://api.openweathermap.org/data/2.5/forecast?lat="+latitude+"&units=metric&lon="+longitude+"&appid="+apiKey);
+        return getNext5Days(startUrl+"forecast?lat="+latitude+"&units=metric&lon="+longitude+"&appid="+apiKey);
     }
 
     @GetMapping("/names5days")
     public String getNext5DaysName(@RequestParam("city") String city) {
-        return getNext5Days("https://api.openweathermap.org/data/2.5/forecast?q=+"+city+"&units=metric&appid="+apiKey);
+        return getNext5Days(startUrl+"/forecast?q=+"+city+"&units=metric&appid="+apiKey);
     }
 
     public String getNext5Days(String url) {
@@ -97,7 +97,6 @@ public class WeatherController {
         LocalDate startDate = LocalDate.parse(dateFrom, formatter);
         LocalDate endDate = LocalDate.parse(dateTo, formatter);
         
-        // Limitar el intervalo a un máximo de 10 días
         endDate = startDate.plusDays(Math.min(9, ChronoUnit.DAYS.between(startDate, endDate)));
 
         List<Map<String, Object>> fechas = startDate.datesUntil(endDate.plusDays(1))

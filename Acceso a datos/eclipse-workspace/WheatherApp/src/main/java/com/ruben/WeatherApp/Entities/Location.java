@@ -10,7 +10,7 @@ import lombok.Data;
 @Data
 @AllArgsConstructor
 public class Location implements Serializable{
-
+	private static final long serialVersionUID = 1L;
 	@SerializedName("name")
 	private String city;
     private Main main;
@@ -24,7 +24,8 @@ public class Location implements Serializable{
     	this.weather.add(new Location.Weather());
     }
     public static class Sys implements Serializable{
-    	private String country;
+		private static final long serialVersionUID = 1L;
+		private String country;
 
 		public String getCountry() {
 			return country;
@@ -36,7 +37,8 @@ public class Location implements Serializable{
     }
     
     public static class Main implements Serializable{
-        private double temp; 
+		private static final long serialVersionUID = 1L;
+		private double temp; 
     	private int humidity;
     	
     	public double getTemp() {
@@ -61,7 +63,8 @@ public class Location implements Serializable{
     }
     
     public static class Weather implements Serializable{
-        private String main;
+		private static final long serialVersionUID = 1L;
+		private String main;
 		private String description;
 
         public String getMain() {
