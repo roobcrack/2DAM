@@ -2,6 +2,7 @@
 <section name="Workbench">
 	<section name="MavenProjectWizardLocationPage">
 		<list key="location">
+			<item value="C:\Users\Roob\Desktop\2DAM\Acceso a datos\eclipse-workspace\WheatherApp\src\main\java\com\ruben\WeatherApp\Entities\Location.java"/>
 			<item value="C:\Users\Roob\Desktop\2DAM\Acceso a datos\eclipse-workspace\WheatherApp\pom.xml"/>
 			<item value="C:\Users\Roob\Desktop\2DAM\Acceso a datos\eclipse-workspace\WheatherApp\src\main\java\com\ruben\WheatherApp\App.java"/>
 			<item value="C:\Users\Roob\eclipse-workspace\xmljson\src\main\java\com\ruben\xmljson\utils\JsonUtils.java"/>
@@ -28,12 +29,17 @@
 	</section>
 	<section name="Maven2ProjectWizardArchifactPage">
 		<list key="package">
+			<item value="com.edu.ruben.JokesApp"/>
+			<item value="com.edu.ruben.JokesAppp"/>
 			<item value="test.agTest"/>
 		</list>
 		<list key="groupId">
+			<item value="com.edu.ruben"/>
 			<item value="test"/>
 		</list>
 		<list key="artifactId">
+			<item value="JokesApp"/>
+			<item value="JokesAppp"/>
 			<item value="agTest"/>
 		</list>
 		<list key="projectNameTemplate">
