@@ -20,4 +20,7 @@
     <fullyQualifiedTypeName name="org.apache.catalina.realm.JNDIRealm.User"/>
     <fullyQualifiedTypeName name="com.ruben.WebtherChecker.Utils.JsonUtils"/>
     <fullyQualifiedTypeName name="com.ruben.WebtherChecker.Utils.SerializeUtils"/>
+    <fullyQualifiedTypeName name="java.sql.Statement"/>
+    <fullyQualifiedTypeName name="java.sql.Connection"/>
+    <fullyQualifiedTypeName name="java.sql.Types"/>
 </qualifiedTypeNameHistroy>

@@ -11,7 +11,7 @@ public class JsonUtils {
                 System.out.println("Error: Empty or null.");
                 return null;
             }
-            return new Gson().fromJson(jsonResponse, object);  // Deserializamos un solo objeto
+            return new Gson().fromJson(jsonResponse, object);
         } catch (JsonSyntaxException e) {
             System.out.println("Error: Invalid syntax - " + e.getMessage());
             return null;

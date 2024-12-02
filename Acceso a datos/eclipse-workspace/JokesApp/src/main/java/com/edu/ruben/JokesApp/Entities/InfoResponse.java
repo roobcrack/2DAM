@@ -1,12 +1,13 @@
 package com.edu.ruben.JokesApp.Entities;
 
 import java.util.List;
-import com.google.gson.annotations.SerializedName;
+import java.util.Map;
+import java.util.HashMap;
 
 public class InfoResponse {
     private boolean error;
     private JokesInfo jokes;
-    
+
     public boolean isError() {
         return error;
     }
@@ -24,11 +25,15 @@ public class InfoResponse {
     }
 
     public static class JokesInfo {
-    	private int totalCount;
+        private int totalCount;
         private List<String> categories;
         private List<String> flags;
         private List<String> types;
-        private List<LanguageInfo> safeJokes;
+        private Map<String, int[]> idRange;
+
+        public JokesInfo() {
+            idRange = new HashMap<>();
+        }
 
         public List<String> getCategories() {
             return categories;
@@ -53,28 +58,28 @@ public class InfoResponse {
         public void setTypes(List<String> types) {
             this.types = types;
         }
-        
-        public List<LanguageInfo> getSafeJokes() {
-            return safeJokes;
+
+        public int getTotalCount() {
+            return totalCount;
         }
 
-        public void setSafeJokes(List<LanguageInfo> safeJokes) {
-            this.safeJokes = safeJokes;
+        public void setTotalCount(int totalCount) {
+            this.totalCount = totalCount;
         }
 
-		public int getTotalCount() {
-			return totalCount;
-		}
+        public Map<String, int[]> getIdRange() {
+            return idRange;
+        }
 
-		public void setTotalCount(int totalCount) {
-			this.totalCount = totalCount;
-		}
+        public void setIdRange(Map<String, int[]> idRange) {
+            this.idRange = idRange;
+        }
     }
 
     public static class LanguageInfo {
         private String lang;
         private int count;
-        
+
         public String getLang() {
             return lang;
         }
@@ -91,5 +96,4 @@ public class InfoResponse {
             this.count = count;
         }
     }
-
 }

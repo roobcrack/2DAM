@@ -3,16 +3,15 @@ package com.edu.ruben.JokesApp.Entities;
 import java.util.Map;
 
 public class JokeRequest {
-    private int id;  // Add ID field
+    private int id;
     private String setup;
     private String delivery;
     private String joke;
     private String language;
     private String category;
     private String type;
-    private Map<String, Boolean> flags;  // Use a map for flags (key: flag name, value: true/false)
-
-    // Getters and Setters
+    private Map<String, Boolean> flags;
+    private Map<String, int[]> idRange;
 
     public int getId() {
         return id;
@@ -76,5 +75,13 @@ public class JokeRequest {
 
     public void setFlags(Map<String, Boolean> flags) {
         this.flags = flags;
+    }
+
+    public Map<String, int[]> getIdRange() {
+        return idRange;
+    }
+
+    public void setIdRange(Map<String, int[]> idRange) {
+        this.idRange = idRange;
     }
 }
