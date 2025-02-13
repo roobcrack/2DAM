@@ -14,3 +14,12 @@ C:\Users\Roob\Desktop\Cine\Data\obj\Debug\net8.0\Data.dll
 C:\Users\Roob\Desktop\Cine\Data\obj\Debug\net8.0\refint\Data.dll
 C:\Users\Roob\Desktop\Cine\Data\obj\Debug\net8.0\Data.pdb
 C:\Users\Roob\Desktop\Cine\Data\obj\Debug\net8.0\ref\Data.dll
+C:\Users\Roob\Desktop\2DAM\Desarrollo de interfaces\Cine\Data\obj\Debug\net8.0\Data.csproj.AssemblyReference.cache
+C:\Users\Roob\Desktop\2DAM\Desarrollo de interfaces\Cine\Data\obj\Debug\net8.0\Data.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Roob\Desktop\2DAM\Desarrollo de interfaces\Cine\Data\obj\Debug\net8.0\Data.AssemblyInfoInputs.cache
+C:\Users\Roob\Desktop\2DAM\Desarrollo de interfaces\Cine\Data\obj\Debug\net8.0\Data.AssemblyInfo.cs
+C:\Users\Roob\Desktop\2DAM\Desarrollo de interfaces\Cine\Data\obj\Debug\net8.0\Data.csproj.CoreCompileInputs.cache
+C:\Users\Roob\Desktop\2DAM\Desarrollo de interfaces\Cine\Data\obj\Debug\net8.0\Data.sourcelink.json
+C:\Users\Roob\Desktop\2DAM\Desarrollo de interfaces\Cine\Data\obj\Debug\net8.0\Data.dll
+C:\Users\Roob\Desktop\2DAM\Desarrollo de interfaces\Cine\Data\obj\Debug\net8.0\refint\Data.dll
+C:\Users\Roob\Desktop\2DAM\Desarrollo de interfaces\Cine\Data\obj\Debug\net8.0\Data.pdb

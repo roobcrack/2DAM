@@ -38,3 +38,16 @@ C:\Users\Roob\Desktop\Cine\Cine\obj\Debug\net8.0-windows\refint\Presentation.dll
 C:\Users\Roob\Desktop\Cine\Cine\obj\Debug\net8.0-windows\Presentation.pdb
 C:\Users\Roob\Desktop\Cine\Cine\obj\Debug\net8.0-windows\Presentation.genruntimeconfig.cache
 C:\Users\Roob\Desktop\Cine\Cine\obj\Debug\net8.0-windows\ref\Presentation.dll
+C:\Users\Roob\Desktop\2DAM\Desarrollo de interfaces\Cine\Cine\obj\Debug\net8.0-windows\Presentation.csproj.AssemblyReference.cache
+C:\Users\Roob\Desktop\2DAM\Desarrollo de interfaces\Cine\Cine\obj\Debug\net8.0-windows\Presentacion.EmployeeList.resources
+C:\Users\Roob\Desktop\2DAM\Desarrollo de interfaces\Cine\Cine\obj\Debug\net8.0-windows\Cine.Form1.resources
+C:\Users\Roob\Desktop\2DAM\Desarrollo de interfaces\Cine\Cine\obj\Debug\net8.0-windows\Presentation.NewEmployee.resources
+C:\Users\Roob\Desktop\2DAM\Desarrollo de interfaces\Cine\Cine\obj\Debug\net8.0-windows\Presentation.csproj.GenerateResource.cache
+C:\Users\Roob\Desktop\2DAM\Desarrollo de interfaces\Cine\Cine\obj\Debug\net8.0-windows\Presentation.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Roob\Desktop\2DAM\Desarrollo de interfaces\Cine\Cine\obj\Debug\net8.0-windows\Presentation.AssemblyInfoInputs.cache
+C:\Users\Roob\Desktop\2DAM\Desarrollo de interfaces\Cine\Cine\obj\Debug\net8.0-windows\Presentation.AssemblyInfo.cs
+C:\Users\Roob\Desktop\2DAM\Desarrollo de interfaces\Cine\Cine\obj\Debug\net8.0-windows\Presentation.csproj.CoreCompileInputs.cache
+C:\Users\Roob\Desktop\2DAM\Desarrollo de interfaces\Cine\Cine\obj\Debug\net8.0-windows\Presentation.sourcelink.json
+C:\Users\Roob\Desktop\2DAM\Desarrollo de interfaces\Cine\Cine\obj\Debug\net8.0-windows\Presentation.dll
+C:\Users\Roob\Desktop\2DAM\Desarrollo de interfaces\Cine\Cine\obj\Debug\net8.0-windows\refint\Presentation.dll
+C:\Users\Roob\Desktop\2DAM\Desarrollo de interfaces\Cine\Cine\obj\Debug\net8.0-windows\Presentation.pdb

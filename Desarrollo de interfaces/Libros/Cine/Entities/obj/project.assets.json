@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Roob\\Desktop\\Libros\\Cine\\Entities\\Entities.csproj",
+      "projectUniqueName": "C:\\Users\\Roob\\Desktop\\2DAM\\Desarrollo de interfaces\\Libros\\Cine\\Entities\\Entities.csproj",
       "projectName": "Entities",
-      "projectPath": "C:\\Users\\Roob\\Desktop\\Libros\\Cine\\Entities\\Entities.csproj",
+      "projectPath": "C:\\Users\\Roob\\Desktop\\2DAM\\Desarrollo de interfaces\\Libros\\Cine\\Entities\\Entities.csproj",
       "packagesPath": "C:\\Users\\Roob\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Roob\\Desktop\\Libros\\Cine\\Entities\\obj\\",
+      "outputPath": "C:\\Users\\Roob\\Desktop\\2DAM\\Desarrollo de interfaces\\Libros\\Cine\\Entities\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Roob\\AppData\\Roaming\\NuGet\\NuGet.Config",

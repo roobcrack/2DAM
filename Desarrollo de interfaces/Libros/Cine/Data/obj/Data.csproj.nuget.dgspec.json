@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Roob\\Desktop\\Libros\\Cine\\Data\\Data.csproj": {}
+    "C:\\Users\\Roob\\Desktop\\2DAM\\Desarrollo de interfaces\\Libros\\Cine\\Data\\Data.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Roob\\Desktop\\Libros\\Cine\\Data\\Data.csproj": {
+    "C:\\Users\\Roob\\Desktop\\2DAM\\Desarrollo de interfaces\\Libros\\Cine\\Data\\Data.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Roob\\Desktop\\Libros\\Cine\\Data\\Data.csproj",
+        "projectUniqueName": "C:\\Users\\Roob\\Desktop\\2DAM\\Desarrollo de interfaces\\Libros\\Cine\\Data\\Data.csproj",
         "projectName": "Data",
-        "projectPath": "C:\\Users\\Roob\\Desktop\\Libros\\Cine\\Data\\Data.csproj",
+        "projectPath": "C:\\Users\\Roob\\Desktop\\2DAM\\Desarrollo de interfaces\\Libros\\Cine\\Data\\Data.csproj",
         "packagesPath": "C:\\Users\\Roob\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Roob\\Desktop\\Libros\\Cine\\Data\\obj\\",
+        "outputPath": "C:\\Users\\Roob\\Desktop\\2DAM\\Desarrollo de interfaces\\Libros\\Cine\\Data\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Roob\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -28,8 +28,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\Roob\\Desktop\\Libros\\Cine\\Entities\\Entities.csproj": {
-                "projectPath": "C:\\Users\\Roob\\Desktop\\Libros\\Cine\\Entities\\Entities.csproj"
+              "C:\\Users\\Roob\\Desktop\\2DAM\\Desarrollo de interfaces\\Libros\\Cine\\Entities\\Entities.csproj": {
+                "projectPath": "C:\\Users\\Roob\\Desktop\\2DAM\\Desarrollo de interfaces\\Libros\\Cine\\Entities\\Entities.csproj"
               }
             }
           }
@@ -69,14 +69,14 @@
         }
       }
     },
-    "C:\\Users\\Roob\\Desktop\\Libros\\Cine\\Entities\\Entities.csproj": {
+    "C:\\Users\\Roob\\Desktop\\2DAM\\Desarrollo de interfaces\\Libros\\Cine\\Entities\\Entities.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Roob\\Desktop\\Libros\\Cine\\Entities\\Entities.csproj",
+        "projectUniqueName": "C:\\Users\\Roob\\Desktop\\2DAM\\Desarrollo de interfaces\\Libros\\Cine\\Entities\\Entities.csproj",
         "projectName": "Entities",
-        "projectPath": "C:\\Users\\Roob\\Desktop\\Libros\\Cine\\Entities\\Entities.csproj",
+        "projectPath": "C:\\Users\\Roob\\Desktop\\2DAM\\Desarrollo de interfaces\\Libros\\Cine\\Entities\\Entities.csproj",
         "packagesPath": "C:\\Users\\Roob\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Roob\\Desktop\\Libros\\Cine\\Entities\\obj\\",
+        "outputPath": "C:\\Users\\Roob\\Desktop\\2DAM\\Desarrollo de interfaces\\Libros\\Cine\\Entities\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Roob\\AppData\\Roaming\\NuGet\\NuGet.Config",

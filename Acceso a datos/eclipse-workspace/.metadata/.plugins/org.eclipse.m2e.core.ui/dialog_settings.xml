@@ -30,6 +30,7 @@
 	</section>
 	<section name="Maven2ProjectWizardArchifactPage">
 		<list key="package">
+			<item value="com.edu.ruben.GestionJokes"/>
 			<item value="com.edu.ruben.PeopleManage"/>
 			<item value="com.edu.ruben.JokesApp"/>
 			<item value="com.edu.ruben.JokesAppp"/>
@@ -40,6 +41,7 @@
 			<item value="test"/>
 		</list>
 		<list key="artifactId">
+			<item value="GestionJokes"/>
 			<item value="PeopleManage"/>
 			<item value="JokesApp"/>
 			<item value="JokesAppp"/>

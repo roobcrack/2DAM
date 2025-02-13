@@ -16,3 +16,21 @@ C:\Users\Roob\Desktop\Cine\Business\obj\Debug\net8.0\Business.dll
 C:\Users\Roob\Desktop\Cine\Business\obj\Debug\net8.0\refint\Business.dll
 C:\Users\Roob\Desktop\Cine\Business\obj\Debug\net8.0\Business.pdb
 C:\Users\Roob\Desktop\Cine\Business\obj\Debug\net8.0\ref\Business.dll
+C:\Users\Roob\Desktop\2DAM\Desarrollo de interfaces\Cine\Business\bin\Debug\net8.0\Business.deps.json
+C:\Users\Roob\Desktop\2DAM\Desarrollo de interfaces\Cine\Business\bin\Debug\net8.0\Business.dll
+C:\Users\Roob\Desktop\2DAM\Desarrollo de interfaces\Cine\Business\bin\Debug\net8.0\Business.pdb
+C:\Users\Roob\Desktop\2DAM\Desarrollo de interfaces\Cine\Business\bin\Debug\net8.0\Data.dll
+C:\Users\Roob\Desktop\2DAM\Desarrollo de interfaces\Cine\Business\bin\Debug\net8.0\Entities.dll
+C:\Users\Roob\Desktop\2DAM\Desarrollo de interfaces\Cine\Business\bin\Debug\net8.0\Data.pdb
+C:\Users\Roob\Desktop\2DAM\Desarrollo de interfaces\Cine\Business\bin\Debug\net8.0\Entities.pdb
+C:\Users\Roob\Desktop\2DAM\Desarrollo de interfaces\Cine\Business\obj\Debug\net8.0\Business.csproj.AssemblyReference.cache
+C:\Users\Roob\Desktop\2DAM\Desarrollo de interfaces\Cine\Business\obj\Debug\net8.0\Business.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Roob\Desktop\2DAM\Desarrollo de interfaces\Cine\Business\obj\Debug\net8.0\Business.AssemblyInfoInputs.cache
+C:\Users\Roob\Desktop\2DAM\Desarrollo de interfaces\Cine\Business\obj\Debug\net8.0\Business.AssemblyInfo.cs
+C:\Users\Roob\Desktop\2DAM\Desarrollo de interfaces\Cine\Business\obj\Debug\net8.0\Business.csproj.CoreCompileInputs.cache
+C:\Users\Roob\Desktop\2DAM\Desarrollo de interfaces\Cine\Business\obj\Debug\net8.0\Business.sourcelink.json
+C:\Users\Roob\Desktop\2DAM\Desarrollo de interfaces\Cine\Business\obj\Debug\net8.0\Business.csproj.CopyComplete
+C:\Users\Roob\Desktop\2DAM\Desarrollo de interfaces\Cine\Business\obj\Debug\net8.0\Business.dll
+C:\Users\Roob\Desktop\2DAM\Desarrollo de interfaces\Cine\Business\obj\Debug\net8.0\refint\Business.dll
+C:\Users\Roob\Desktop\2DAM\Desarrollo de interfaces\Cine\Business\obj\Debug\net8.0\Business.pdb
+C:\Users\Roob\Desktop\2DAM\Desarrollo de interfaces\Cine\Business\obj\Debug\net8.0\ref\Business.dll
